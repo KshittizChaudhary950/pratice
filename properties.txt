@@ -33,3 +33,42 @@ namespace ClassAndObject
         }
     }
 }
+
+
+// program using constructor
+    using System;
+
+    namespace ClassAndObject
+    {
+        class ObjectClass
+        {
+            public string name;
+            public int age;
+           public string address;
+
+            public ObjectClass(string _name, int _age, string _address)
+            {
+                name = _name;
+                age = _age;
+                address = _address;
+
+
+            }
+
+
+        }
+        class Program
+        {
+            static void Main(string[] args)
+            {
+                ObjectClass s = new ObjectClass("kshittiz chaudhary", 19, "nepal"); // initilize variable with the help of construstor
+                Console.WriteLine("{0},{1},{2}", s.name, s.age, s.address); // place holder syntax
+            Console.WriteLine(s.name+"   "  +s.address+"   "  +s.age);// concatenation syntax
+    
+
+
+        }
+        }
+    }
+
+ 
