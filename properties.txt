@@ -1,0 +1,35 @@
+
+using System;
+
+namespace ClassAndObject
+{
+    class ObjectClass
+    {
+        private string mynumber = "9813323849";
+         
+        public string Mynumber//creating property of private variable my number 
+        {
+            get
+            {
+                return mynumber;
+            }
+            set
+            {
+                mynumber = value;
+            }
+        }
+        
+    }
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            ObjectClass s = new ObjectClass();
+            s.Mynumber = "jc";
+            Console.WriteLine(s.Mynumber);
+
+            
+           
+        }
+    }
+}
