@@ -71,4 +71,31 @@ namespace ClassAndObject
         }
     }
 
+  // class and object example
+    using System;
+
+    namespace ClassAndObject
+    {
+    public class ClassAndObjectExample
+    {
+        public string name = "kshittiz chaudhary ";
+       public  int age = 19;
+
+    }
+       
+        class Program
+        {
+            static void Main(string[] args)
+            {
+            ClassAndObjectExample obj = new ClassAndObjectExample();
+
+            Console.WriteLine(obj.name); // calling variable of class with helps of object 
+            Console.WriteLine(obj.age);
+            Console.ReadLine();
+
+
+        }
+        }
+    }
+
  
