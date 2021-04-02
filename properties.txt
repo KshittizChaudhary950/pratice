@@ -5,7 +5,7 @@ namespace ClassAndObject
 {
     class ObjectClass
     {
-        private string mynumber = "9813323849";
+        private string mynumber = "981332308490";
          
         public string Mynumber//creating property of private variable my number 
         {
