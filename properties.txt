@@ -1,74 +1,31 @@
-
 using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
-namespace ClassAndObject
+namespace pattern
 {
-    class ObjectClass
-    {
-        private string mynumber = "981332308490";
-         
-        public string Mynumber//creating property of private variable my number 
-        {
-            get
-            {
-                return mynumber;
-            }
-            set
-            {
-                mynumber = value;
-            }
-        }
-        
-    }
     class Program
     {
         static void Main(string[] args)
         {
-            ObjectClass s = new ObjectClass();
-            s.Mynumber = "jc";
-            Console.WriteLine(s.Mynumber);
+      
+            Console.WriteLine("Enter the number of rows you want to print ");
+            int r = Convert.ToInt32(Console.ReadLine());
+                
+            for(int i=1;i<=r; i++)
+            {
+                for (int j = 1; j <= i; j++)
+                {
+                    Console.Write(j+" ");
+                 
+                }
 
-            
-           
+                Console.WriteLine();
+            }
+            Console.ReadLine();
         }
+        
     }
 }
-
-
-// program using constructor
-    using System;
-
-    namespace ClassAndObject
-    {
-        class ObjectClass
-        {
-            public string name;
-            public int age;
-           public string address;
-
-            public ObjectClass(string _name, int _age, string _address)
-            {
-                name = _name;
-                age = _age;
-                address = _address;
-
-
-            }
-
-
-        }
-        class Program
-        {
-            static void Main(string[] args)
-            {
-                ObjectClass s = new ObjectClass("kshittiz chaudhary", 19, "nepal"); // initilize variable with the help of construstor
-                Console.WriteLine("{0},{1},{2}", s.name, s.age, s.address); // place holder syntax
-            Console.WriteLine(s.name+"   "  +s.address+"   "  +s.age);// concatenation syntax
-    
-
-
-        }
-        }
-    }
-
- 
